@@ -1,4 +1,3 @@
-import { all } from "express/lib/application.js";
 import { ProductEntity } from "../entities/product.entity.js";
 import { ERRORS, SUCESS } from "../shared/product.shared.js";
 
