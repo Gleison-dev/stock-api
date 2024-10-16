@@ -4,7 +4,7 @@ const instanceProductService = new ProductService();
 
 const createProduct = async (req, res) => {
   const { name, brand, quantity, price } = req.body;
-  const newProduct = await instanceProductService(name, brand, quantity, price);
+  const newProduct = await instanceProductService.createProdutService(name, brand, quantity, price);
   res.status(201).json({ newProduct });
 };
 
