@@ -37,7 +37,7 @@ class ProductService {
 
   async getProductByNameService(name) {
     try {
-      const productByName = await ProductEntity.findOne({
+      const productByName = await ProductEntity.findAll({
         where: {
           name,
         },
@@ -53,7 +53,7 @@ class ProductService {
 
   async getAllProductsByBrandService(brand) {
     try {
-      const productByBrand = await ProductEntity.findOne({
+      const productByBrand = await ProductEntity.findAll({
         where: {
           brand,
         },
