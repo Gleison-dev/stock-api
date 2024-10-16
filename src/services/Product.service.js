@@ -118,6 +118,7 @@ class ProductService {
           id,
         },
       });
+      return `${SUCESS.DELETED}`;
     } catch (error) {
       return error;
     }
